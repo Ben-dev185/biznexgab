@@ -177,10 +177,44 @@ header {
 }
 
 .logo {
-  font: 700 1.4rem 'Figtree', system-ui, sans-serif;
-  letter-spacing: -.01em;
-  color: var(--nuit2);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .22rem;
+  line-height: 1;
   text-decoration: none
+}
+
+.logo-mot {
+  font: 800 1.55rem 'Figtree', system-ui, sans-serif;
+  letter-spacing: .01em;
+  text-align: center
+}
+
+.logo-biz {
+  color: #264c92
+}
+
+.logo-nex {
+  color: #55962f
+}
+
+.logo-gab {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  font: 500 .62rem 'Figtree', system-ui, sans-serif;
+  letter-spacing: .5em;
+  text-indent: .5em;
+  color: #c4a352
+}
+
+.logo-gab::before,
+.logo-gab::after {
+  content: "";
+  flex: 1;
+  height: 1.5px;
+  background: #c4a352
 }
 
 nav ul {
