@@ -723,9 +723,10 @@ details[open] .faq-rep {
   }
 
     .burger {
-    display: block;
-    margin-left: auto
-  }
+  display: block;
+  margin-left: auto;
+  flex-shrink: 0;
+}
 
   .nav {
   position: relative;
@@ -738,23 +739,23 @@ details[open] .faq-rep {
   position: absolute;
   top: 100%;
   right: 0;
+  width: min(320px, calc(100vw - 2rem));
+  z-index: 100;
 }
 
   nav ul {
-    position: absolute;
-    inset: 100% 0 auto auto;
-    width: min(320px, 100%);
-    background: var(--papier);
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: .5rem 1.25rem 1.25rem;
-    border: 1px solid var(--trait);
-    border-radius: 0 0 var(--r) var(--r);
-    box-shadow: 0 16px 30px rgba(11, 31, 58, .15);
-    display: none
-  }
-
+  position: static;
+  width: 100%;
+  background: var(--papier);
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: .5rem 1.25rem 1.25rem;
+  border: 1px solid var(--trait);
+  border-radius: 0 0 var(--r) var(--r);
+  box-shadow: 0 16px 30px rgba(11, 31, 58, .15);
+  display: none;
+}
   nav ul.ouvert {
     display: flex
   }
