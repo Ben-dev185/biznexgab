@@ -722,13 +722,23 @@ details[open] .faq-rep {
     grid-template-columns: 1fr 1fr
   }
 
-  .burger {
-    display: block
+    .burger {
+    display: block;
+    margin-left: auto
   }
 
   .nav {
-    position: relative
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav > nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
 
   nav ul {
     position: absolute;
