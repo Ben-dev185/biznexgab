@@ -1,8 +1,3 @@
-Images à placer dans ce dossier (téléchargées depuis l'ancien site WordPress) :
-
-IMG_7253.avif   IMG_7255.avif   IMG_7257.jpg   IMG_7258.avif
-IMG_7252.jpg    IMG_8871.jpg    IMG_7261.webp
-
-Ensuite, dans index.html, remplacer :
-  https://biznexgab.com/wp-content/uploads/2026/07/   par   images/
-  https://biznexgab.com/wp-content/uploads/2026/10/   par   images/
+Images du site (compressées en WebP) :
+- IMG_*.webp : photos du hero, des services et de l'équipe
+- partenaires/ : logos des partenaires (fond transparent)

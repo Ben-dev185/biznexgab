@@ -90,7 +90,8 @@
   function initReveal() {
     const targets = $$(
       '.tete, .carte, .engage div, .equipe > *, .contact > *, .marquee,' +
-      '.faq-grid > div:first-child, .faq-liste details, .legal .wrap > *, .pied'
+      '.faq-grid > div:first-child, .faq-liste details, .legal .wrap > *,' +
+      '.logos li, .temo > *'
     );
     if (!targets.length) return;
 
